@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>前端介绍</title>
+</head>
+<style>
+body,html{
+	height: 100%;
+	width: 100%;
+}
+*{
+	margin: 0;
+	padding: 0;
+}
+	#webHome{
+		width: 100%;
+		height: 100%;
+		margin: auto;
+		background: #ccc;
+		position: relative;
+	}
+	.head{
+		width: 100%;
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		text-align: center;
+		line-height: 80px;
+		font-size: 24px;
+		border-bottom: 1px solid #ddd;
+	}
+	.main{
+		padding-top: 80px;
+		padding-bottom: 44px;
+		box-sizing: border-box;
+		
+	}
+	.foot{
+		width: 100%;
+		position: absolute;
+		bottom: 0px;
+		line-height: 44px;
+		font-size: 24px;
+		padding: 30px 30px;
+		box-sizing: border-box;
+		overflow: hidden;
+	}
+	.upBnt{
+		width: 10%;
+		float: left;
+		background: green;
+		line-height: 44px;
+		border-radius: 10px;
+		text-align: center;
+	}
+	.nextBnt{
+		width: 10%;
+		float: right;
+		background: green;
+		line-height: 44px;
+		border-radius: 10px;
+		text-align: center;
+	}
+	.menu{
+		float: left;
+		width: 80%;
+
+	}
+	.menu>span{
+		width: 20%;
+		display: inline-block;
+		text-align: center;
+		margin-left: 10%;
+		background: green;
+		line-height: 44px;
+		border-radius: 10px;
+		text-align: center;
+	}
+</style>
+<body>
+	<div id="webHome">
+		<div class="head">
+			<span>中寰卫星</span>
+		</div>
+		<div class="main">
+			
+		</div>
+		<div class="foot">
+			<span class="upBnt">上一页</span>
+			<div class="menu">
+				<span id="page1">page1</span>
+				<span id="page2">page2</span>
+				<span id="page3">page3</span>
+			</div>
+			
+			<span class="nextBnt">下一页</span>
+		</div>
+	</div>
+	<script src="<%= htmlWebpackPlugin.options.vendor %>"></script>
+</body>
+
+</html>
